@@ -1,1 +1,10 @@
-
+@import './utils/var';
+@import './base/normalize';
+@import './utils/visually-hidden';
+@import './base/reset-style';
+@import './base/general-style';
+@import './layout/header';
+@import './components/logo';
+@import './layout/nav';
+@import './layout/contacts';
+@import './components/hero';
