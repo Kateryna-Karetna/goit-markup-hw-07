@@ -1,0 +1,21 @@
+// section
+@import '../common/section';
+
+// container
+@import '../common/container';
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn__wrapper:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn__item {
+  transition: box-shadow $anim-duration $cubic, color $anim-duration $cubic,
+    background-color $anim-duration $cubic;
+}
+
+@import '../common/button';

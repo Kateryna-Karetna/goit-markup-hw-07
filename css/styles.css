@@ -241,7 +241,7 @@ img {
 
 /* Кнопка */
 
-.button {
+/* .button {
   transition: color var(--anim-duration) var(--cubic),
     background-color var(--anim-duration) var(--cubic);
 
@@ -270,9 +270,9 @@ img {
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
-}
+} */
 
-.hero__button {
+/* .hero__button {
   transition: color var(--anim-duration) var(--cubic),
     background-color var(--anim-duration) var(--cubic);
 
@@ -298,11 +298,11 @@ img {
 .hero__button:hover,
 .hero__button:focus {
   background-color: #188ce8;
-}
+} */
 
 /* Секция преимущества */
 
-.section {
+/* .section {
   padding-top: var(--secondary-item-size);
   padding-bottom: var(--secondary-item-size);
 
@@ -352,11 +352,11 @@ img {
   line-height: 1.71;
 
   color: var(--primary-text-color);
-}
+} */
 
 /* Секция род деятельности */
 
-.work {
+/* .work {
   padding-top: 0;
 }
 
@@ -401,11 +401,11 @@ img {
 
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
-}
+} */
 
 /* Секция команда */
 
-.team {
+/* .team {
   background-color: var(--bgc-secondary-color);
 }
 
@@ -493,11 +493,11 @@ img {
 .social-links__link:hover .team__social-links,
 .social-links__link:focus .team__social-links {
   fill: var(--primary-white-color);
-}
+} */
 
 /* Секция постоянные клиенты */
 
-.clients__list {
+/* .clients__list {
   display: flex;
   margin-top: 50px;
 }
@@ -540,11 +540,11 @@ img {
 .clients__link:hover .clients__logo,
 .clients__link:focus .clients__logo {
   fill: var(--accent-color);
-}
+} */
 
 /* Футер */
 
-.footer {
+/* .footer {
   padding-top: 60px;
   padding-bottom: 60px;
 
@@ -581,9 +581,9 @@ img {
 .address__link:hover,
 .address__link:focus {
   color: var(--accent-color);
-}
+} */
 
-.join {
+/* .join {
   margin-left: 70px;
 }
 
@@ -627,9 +627,9 @@ img {
 
 .join__icon {
   fill: var(--primary-white-color);
-}
+} */
 
-.form-sub {
+/* .form-sub {
   display: flex;
   margin-left: auto;
 }
@@ -705,11 +705,11 @@ img {
   margin-left: 10px;
 
   fill: var(--primary-white-color);
-}
+} */
 
 /* Модальное окно */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 50%;
@@ -732,7 +732,7 @@ img {
   pointer-events: none;
 }
 
-.modal__wrapper {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -766,9 +766,9 @@ img {
 .modal__button:hover,
 .modal__button:focus {
   fill: var(--accent-color);
-}
+} */
 
-.modal-form {
+/* .modal-form {
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -831,9 +831,9 @@ img {
 .modal-form__input:hover + .modal-form__icon,
 .modal-form__input:focus + .modal-form__icon {
   fill: var(--accent-color);
-}
+} */
 
-.textarea {
+/* .textarea {
   display: grid;
 }
 
@@ -861,9 +861,9 @@ img {
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
+} */
 
-.checkbox {
+/* .checkbox {
   position: relative;
 
   margin-top: 20px;
@@ -926,22 +926,22 @@ img {
   text-decoration: underline;
 
   color: var(--accent-color);
-}
+} */
 
-.modal-form__button {
+/* .modal-form__button {
   margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 
   line-height: 1.88;
   letter-spacing: 0.06em;
-}
+} */
 
 /* Cтили для страницы портфолио */
 
 /* Кнопка */
 
-.btn {
+/* .btn {
   display: flex;
   justify-content: center;
 }
@@ -953,11 +953,11 @@ img {
 .btn__item {
   transition: box-shadow var(--anim-duration) var(--cubic), color var(--anim-duration) var(--cubic),
     background-color var(--anim-duration) var(--cubic);
-}
+} */
 
 /* Секция портфолио */
 
-.portfolio {
+/* .portfolio {
   display: flex;
   flex-wrap: wrap;
   margin-top: 50px;
@@ -1039,4 +1039,4 @@ img {
   line-height: 1.87;
 
   color: var(--primary-text-color);
-}
+} */

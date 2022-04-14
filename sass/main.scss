@@ -1,10 +1,35 @@
-@import './utils/var';
-@import './base/normalize';
+// variables
+@import './utils/variables';
+
+// visually-hidden
 @import './utils/visually-hidden';
-@import './base/reset-style';
-@import './base/general-style';
-@import './layout/header';
-@import './components/logo';
-@import './layout/nav';
-@import './layout/contacts';
-@import './components/hero';
+
+// base-style
+@import './base/base';
+
+// container
+@import './components/common/container';
+
+// header
+@import './components/common/header/module-header';
+
+// hero-section
+@import './components/index-page/hero';
+
+// benefits-section
+@import './components/index-page/benefits-section';
+
+// work-section
+@import './components/index-page/work-section';
+
+// team-section
+@import './components/index-page/team-section';
+
+// clients-section
+@import './components/index-page/clients';
+
+// footer
+@import './components/common/footer/module-footer';
+
+// modal
+@import './components/index-page/modal/module-modal';
