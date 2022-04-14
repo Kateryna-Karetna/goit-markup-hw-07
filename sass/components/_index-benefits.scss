@@ -1,7 +1,14 @@
-// section
-@import '../common/section';
+.section {
+  @extend %section;
+}
+
+.section__box {
+  @extend %container;
+}
 
 .section__list {
+  @extend %list;
+
   display: flex;
 }
 

@@ -7,29 +7,29 @@
 // base-style
 @import './base/base';
 
-// container
-@import './components/common/container';
+// placeholder
+@import './utils/placeholders';
 
 // header
-@import './components/common/header/module-header';
+@import './components/header';
 
 // hero-section
-@import './components/index-page/hero';
+@import './components/index-hero';
 
 // benefits-section
-@import './components/index-page/benefits-section';
+@import './components/index-benefits';
 
 // work-section
-@import './components/index-page/work-section';
+@import './components/index-work';
 
 // team-section
-@import './components/index-page/team-section';
+@import './components/index-team';
 
 // clients-section
-@import './components/index-page/clients';
+@import './components/index-clients';
 
 // footer
-@import './components/common/footer/module-footer';
+@import './components/footer';
 
 // modal
-@import './components/index-page/modal/module-modal';
+@import './components/index-modal';

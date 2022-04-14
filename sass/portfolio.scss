@@ -7,14 +7,14 @@
 // base-style
 @import './base/base';
 
+// placeholder
+@import './utils/placeholders';
+
 // header
-@import './components/common/header/module-header';
+@import './components/header';
 
-// btn
-@import './components/portfolio-page/btn';
-
-// portfolio-cards
-@import './components/portfolio-page/portfolio-cards';
+// portfolio
+@import './components/portfolio';
 
 // footer
-@import './components/common/footer/module-footer';
+@import './components/footer';
