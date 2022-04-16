@@ -42,7 +42,7 @@ body {
   background-color: #ffffff;
 }
 
-.heder__container, .section__box, .work_box, .team__box, .clients__box, .footer-container {
+.header__container, .section__box, .work__box, .team__box, .clients__box, .footer-container, .product {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
@@ -50,15 +50,38 @@ body {
   width: 1200px;
 }
 
-.section, .work, .team, .clients {
+.section, .work, .team, .clients, .product {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: #ffffff;
 }
 
-.nav__list, .contacts, .section__list, .work__list, .team__list, .social-links, .clients__list, .address, .join__list {
+.nav__list, .contacts, .section__list, .work__list, .team__list, .social-links, .clients__list, .address, .join__list, .btn, .portfolio {
   padding-left: 0;
   list-style: none;
+}
+
+.btn__item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  padding: 0;
+  padding: 6px 22px;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #f5f4fa;
+}
+
+.btn__item:hover, .btn__item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .work__title, .team__main-title, .clients__title {
@@ -76,7 +99,7 @@ body {
   background-color: #ffffff;
 }
 
-.heder__container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -237,11 +260,6 @@ body {
   padding: 0;
 }
 
-.section__item:not(:last-child),
-.team__img:not(:last-child) {
-  margin-right: 30px;
-}
-
 .section__wrapper {
   display: flex;
   align-items: center;
@@ -266,6 +284,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+}
+
+.section__item:not(:last-child),
+.team__img:not(:last-child) {
+  margin-right: 30px;
 }
 
 .work {
@@ -458,16 +481,16 @@ body {
   color: #2196f3;
 }
 
-.join {
-  margin-left: 70px;
-}
-
 .text-title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   color: #ffffff;
+}
+
+.join {
+  margin-left: 70px;
 }
 
 .join__list {
@@ -762,5 +785,92 @@ body {
 .checkbox__link {
   text-decoration: underline;
   color: #2196f3;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn__wrapper:not(:last-child) {
+  margin-right: 8px;
+}
+
+.btn__item {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: -30px;
+  margin-left: -30px;
+}
+
+.portfolio__item {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.portfolio__link {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+}
+
+.portfolio__link:hover, .portfolio__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.portfolio__text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  padding: 63px 24px;
+  line-height: 1.56;
+  color: #ffffff;
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio__link:hover .portfolio__text,
+.portfolio__link:focus .portfolio__text {
+  transform: translateY(0);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+}
+
+.card__thumb {
+  padding: 20px 24px;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: #eeeeee;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #eeeeee;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: #eeeeee;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: #212121;
+}
+
+.card__text {
+  margin-top: 4px;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
 }
 /*# sourceMappingURL=main.css.map */

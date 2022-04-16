@@ -2,57 +2,57 @@
   @extend %section;
 
   background-color: $bgc-secondary-color;
-}
 
-.team__box {
-  @extend %container;
-}
-
-.team__main-title {
-  @extend %title;
-}
-
-.team__list {
-  @extend %list;
-
-  display: flex;
-  margin-top: 50px;
-}
-
-.team__item {
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-
-  background-color: #ffffff;
-
-  &:not(:last-child) {
-    margin-right: 30px;
+  &__box {
+    @extend %container;
   }
-}
 
-.team__wrapper {
-  padding-top: $main-size;
-  padding-bottom: $main-size;
-}
+  &__main-title {
+    @extend %title;
+  }
 
-.team__title {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+  &__list {
+    @extend %list;
 
-  color: $title-color;
-}
+    display: flex;
+    margin-top: 50px;
+  }
 
-.team__text {
-  margin-top: 10px;
+  &__item {
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
 
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
+    background-color: #ffffff;
 
-  color: $text-color;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__wrapper {
+    padding-top: $main-size;
+    padding-bottom: $main-size;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: $title-color;
+  }
+
+  &__text {
+    margin-top: 10px;
+
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+
+    color: $text-color;
+  }
 }
 
 .social-links {
@@ -61,26 +61,26 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
-}
 
-.social-links__item:not(:last-child) {
-  margin-right: 10px;
-}
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 
-.social-links__link {
-  transition: background-color $anim-duration $cubic;
+  &__link {
+    transition: background-color $anim-duration $cubic;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
 
-  border-radius: 50%;
+    border-radius: 50%;
 
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
   }
 }
 
