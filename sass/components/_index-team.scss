@@ -1,58 +1,48 @@
-.team {
-  @extend %section;
-
+.section__section--bgc {
   background-color: $bgc-secondary-color;
+}
 
-  &__box {
-    @extend %container;
+.team {
+  @extend %list;
+
+  display: flex;
+  margin-top: 50px;
+}
+
+.team__item {
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  background-color: #ffffff;
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
+}
 
-  &__main-title {
-    @extend %title;
-  }
+.team__wrapper {
+  padding-top: $main-size;
+  padding-bottom: $main-size;
+}
 
-  &__list {
-    @extend %list;
+.team__title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 
-    display: flex;
-    margin-top: 50px;
-  }
+  color: $title-color;
+}
 
-  &__item {
-    border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+.team__text {
+  margin-top: 10px;
 
-    background-color: #ffffff;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
 
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  &__wrapper {
-    padding-top: $main-size;
-    padding-bottom: $main-size;
-  }
-
-  &__title {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-
-    color: $title-color;
-  }
-
-  &__text {
-    margin-top: 10px;
-
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-
-    color: $text-color;
-  }
+  color: $text-color;
 }
 
 .social-links {
@@ -65,26 +55,26 @@
   &__item:not(:last-child) {
     margin-right: 10px;
   }
+}
 
-  &__link {
-    transition: background-color $anim-duration $cubic;
+.social-links__link {
+  transition: background-color $anim-duration $cubic;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-    }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
   }
 }
 
-.team__social-links {
+.social-links__icon {
   transition: fill $anim-duration $cubic;
 
   background-size: 20px;

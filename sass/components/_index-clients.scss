@@ -1,58 +1,46 @@
 .clients {
-  @extend %section;
+  @extend %list;
 
-  &__box {
-    @extend %container;
+  display: flex;
+  margin-top: 50px;
+}
+
+.clients__item {
+  width: 170px;
+  height: 92px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
   }
+}
 
-  &__title {
-    @extend %title;
+.clients__link {
+  transition: border $anim-duration $cubic;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+
+    fill: $accent-color;
   }
+}
 
-  &__list {
-    @extend %list;
+.clients__logo {
+  transition: fill $anim-duration $cubic;
 
-    display: flex;
-    margin-top: 50px;
-  }
+  fill: #afb1b8;
 
-  &__item {
-    width: 170px;
-    height: 92px;
-
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-
-  &__link {
-    transition: border $anim-duration $cubic;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-
-    &:hover,
-    &:focus {
-      border: 1px solid $accent-color;
-
-      fill: $accent-color;
-    }
-  }
-
-  &__logo {
-    transition: fill $anim-duration $cubic;
-
-    fill: #afb1b8;
-
-    .clients__link:hover &,
-    .clients__link:focus & {
-      fill: $accent-color;
-    }
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $accent-color;
   }
 }

@@ -9,11 +9,11 @@
   color: $accent-color;
 }
 
-.nav__logo {
+.logo__part {
   color: #000000;
 }
 
-.footer__logo {
+.logo__footer {
   @extend .logo;
 
   display: block;
